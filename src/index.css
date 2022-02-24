@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: "cabinetgrotesk";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  /* Colors */
+  --white-color: #fafafa;
+  --black-color: #000000;
+  --grey-color: #dadada;
+  --dark-grey-color: #8a8a8e80;
+  --light-blue-color: rgba(135, 190, 228, 0.1);
+  --text-blue-color: #74a6c8;
+  --blue-color: #025ce4;
+
+  /* FontStyle*/
+  --fontOne: "cabinetgrotesk";
+
+  /* Font Sizes */
+  --font-seventyTwo: 2rem;
+  --font-fourtyTwo: 2rem;
+  --font-twentyFour: 1.25rem;
+  --font-sixteen: 0.8725rem;
+  --font-fourteen: 0.88rem;
+  --font-twelve: 0.75rem;
+}
