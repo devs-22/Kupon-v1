@@ -1,36 +1,34 @@
 /*------------ [_Root] -----------*/
 :root {
-
   /* Colors */
-  --white-color: #FAFAFA;
+  --white-color: #fafafa;
   --black-color: #000000;
-  --grey-color: #DADADA;
+  --grey-color: #dadada;
   --dark-grey-color: #8a8a8e80;
   --light-blue-color: rgba(135, 190, 228, 0.1);
-  --text-blue-color: #74A6C8;
-  --blue-color: #025CE4;
+  --text-blue-color: #74a6c8;
+  --blue-color: #025ce4;
 
   /* FontStyle*/
-  --fontOne: 'cabinetgrotesk';
-  
+  --fontOne: "cabinetgrotesk";
 
   /* Font Sizes */
   --font-seventyTwo: 2rem;
   --font-fourtyTwo: 2rem;
   --font-twentyFour: 1.25rem;
-  --font-sixteen: .8725rem;
-  --font-fourteen: .88rem;
-  --font-twelve: .75rem;
+  --font-sixteen: 0.8725rem;
+  --font-fourteen: 0.88rem;
+  --font-twelve: 0.75rem;
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width: 900px) {
   :root {
     --font-seventyTwo: 4.5rem;
     --font-fourtyTwo: 2.625rem;
     --font-twentyFour: 1.5rem;
     --font-sixteen: 1rem;
-    --font-fourteen: .88rem;
-    --font-twelve: .75rem;
+    --font-fourteen: 0.88rem;
+    --font-twelve: 0.75rem;
   }
 }
 
@@ -47,7 +45,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /*========================================*/
 /*--------------- [_Utility] -------------*/
 /*========================================*/
@@ -60,14 +57,22 @@ body {
   letter-spacing: 1px;
 }
 
-p, h1, h2, h3,
-h4, h5, h6{
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0;
   margin: 0;
 }
 
-h2, h3,
-h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--head-pri-color);
   font-family: var(--fontTwo);
 }

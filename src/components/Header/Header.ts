@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from "react";
 // import React from 'react';
 // import logo from '../../assets/Logo.png'
 // import {BsLinkedin, BsInstagram, BsFacebook, BsTwitter} from 'react-icons/bs'
@@ -14,7 +14,7 @@ import { useState } from 'react'
 //                 <div className="bar bOne" >{toggle}</div>
 //                 <div className="bar bTwo"></div>
 //                 <div className="bar bThree"></div>
-//             </div> 
+//             </div>
 //         </div>
 
 //         {toggle  && <div className={toggle ? "mobileMenu" : "active"}>
