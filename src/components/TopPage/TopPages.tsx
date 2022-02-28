@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '../Styles/Button.styles';
 import { ReactComponent as Sally } from '../../assets/SVGs/Saly-1.svg';
 import { ReactComponent as Puddle } from '../../assets/SVGs/Vector.svg';
+import { ReactComponent as Line } from '../../assets/SVGs/Line 6.svg';
 import './TopPage.css';
 
 const TopPages = () => {
@@ -58,8 +59,36 @@ const TopPages = () => {
           />
         </div>
         <div className="create-account">
+          <img src={require('../../assets/IMAGES/Frame 1562.png')} alt="" />
           <h1>Create account</h1>
-          <p>Create an account on the web then sign in</p>
+          <p>
+            Create an account on the web app <br /> then sign in
+          </p>
+        </div>
+        <Line className="line" />
+        <div className="create-invoice">
+          <img src={require('../../assets/IMAGES/Frame 1563.png')} alt="" />
+          <h1>Create Invoice</h1>
+          <p className="p-invoice">
+            Draft up an Invoice for your customer in just few minutes.
+          </p>
+        </div>
+        <Line className="line" />
+        <div className="create-invoice">
+          <img src={require('../../assets/IMAGES/Frame 1564.png')} alt="" />
+          <h1>Send Invoice</h1>
+          <p className="p-invoice">
+            Immediately send invoice to your customer after drafting through the
+            mail.
+          </p>
+        </div>
+        <Line className="line" />
+        <div className="create-invoice">
+          <img src={require('../../assets/IMAGES/Frame 1564.png')} alt="" />
+          <h1>Done in a jiffy</h1>
+          <p className="p-jiffy">
+            Continue with your business, now that invoice is sent.
+          </p>
         </div>
       </section>
     </div>
