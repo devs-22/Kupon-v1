@@ -1,0 +1,35 @@
+/* Extra small devices */
+@media (max-width: 576px) {
+  .header-paragraph {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-left: 56px;
+    margin-right: 56px;
+    margin-bottom: 32px;
+  }
+
+  .header-container {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39.68px;
+    text-align: center;
+  }
+
+  .account-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+  }
+}
