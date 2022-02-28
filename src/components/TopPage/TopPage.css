@@ -1,0 +1,149 @@
+/* Extra small devices */
+@media (max-width: 576px) {
+  .header-paragraph {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19.84px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-left: 56px;
+    margin-right: 56px;
+    margin-bottom: 22px;
+  }
+
+  .header-container {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39.68px;
+    text-align: center;
+  }
+
+  .account-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+  }
+
+  .sally {
+    position: absolute;
+  }
+  .puddle {
+    margin-left: 65px;
+    margin-top: 80px;
+  }
+
+  section {
+    background: rgba(135, 190, 228, 0.1);
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 34.69px;
+    padding-bottom: 83px;
+  }
+
+  section h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.88px;
+    color: #025ce4;
+    padding-top: 34.69px;
+  }
+
+  .get-started-header {
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  .get-started-header h2 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19.84px;
+    font-weight: 700;
+  }
+
+  .poly {
+    padding-right: 14px;
+  }
+  .poly2 {
+    padding-left: 14px;
+  }
+
+  .create-account {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .create-account h1 {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: -9%;
+  }
+
+  .create-account p {
+    text-align: center;
+    margin-top: 1%;
+    font-weight: 400%;
+    line-height: 17px;
+    font-size: 14px;
+    color: #8a8a8e;
+  }
+
+  .create-invoice {
+    text-align: center;
+    margin-top: 1%;
+    font-weight: 400%;
+    line-height: 17px;
+    font-size: 14px;
+    color: #8a8a8e;
+  }
+
+  .create-invoice h1 {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: -9%;
+  }
+
+  .p-invoice {
+    text-align: center;
+    margin-top: 1%;
+    font-weight: 400%;
+    line-height: 17px;
+    font-size: 14px;
+    color: #8a8a8e;
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+
+  .p-jiffy {
+    text-align: center;
+    margin-top: 1%;
+    font-weight: 400%;
+    line-height: 17px;
+    font-size: 14px;
+    color: #8a8a8e;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .line {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4%;
+  }
+}

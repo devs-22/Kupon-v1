@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font-family: "cabinetgrotesk";
+  font-family: 'Cabinet Grotesk';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -21,7 +21,7 @@ code {
   --blue-color: #025ce4;
 
   /* FontStyle*/
-  --fontOne: "cabinetgrotesk";
+  --fontOne: 'cabinetgrotesk';
 
   /* Font Sizes */
   --font-seventyTwo: 2rem;
