@@ -13,7 +13,7 @@
     padding: 0px;
     margin-left: 56px;
     margin-right: 56px;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
   }
 
   .header-container {
@@ -39,5 +39,42 @@
   .puddle {
     margin-left: 65px;
     margin-top: 80px;
+  }
+
+  section {
+    background: rgba(135, 190, 228, 0.1);
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 34.69px;
+  }
+
+  section h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.88px;
+    color: #025ce4;
+    padding-top: 34.69px;
+  }
+
+  .get-started-header {
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  .get-started-header h2 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19.84px;
+    font-weight: 700;
+  }
+
+  .poly {
+    padding-right: 14px;
+  }
+  .poly2 {
+    padding-left: 14px;
   }
 }

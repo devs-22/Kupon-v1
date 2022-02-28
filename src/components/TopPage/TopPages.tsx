@@ -42,6 +42,26 @@ const TopPages = () => {
         <Sally className="sally" />
         <Puddle className="puddle" />
       </div>
+      <section>
+        <h1>GET STARTED</h1>
+        <div className="get-started-header">
+          <img
+            src={require('../../assets/SVGs/Polypodium.png')}
+            alt=""
+            className="poly"
+          />
+          <h2>Nigeria's First Invoicing App.</h2>
+          <img
+            src={require('../../assets/SVGs/Polypodium.png')}
+            alt=""
+            className="poly2"
+          />
+        </div>
+        <div className="create-account">
+          <h1>Create account</h1>
+          <p>Create an account on the web then sign in</p>
+        </div>
+      </section>
     </div>
   );
 };
