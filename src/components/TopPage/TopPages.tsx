@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '../Styles/Button.styles';
 import { ReactComponent as Sally } from '../../assets/SVGs/Saly-1.svg';
+import { ReactComponent as Puddle } from '../../assets/SVGs/Vector.svg';
 import './TopPage.css';
 
 const TopPages = () => {
@@ -38,7 +39,8 @@ const TopPages = () => {
         Learn More
       </Button>
       <div>
-        <Sally />
+        <Sally className="sally" />
+        <Puddle className="puddle" />
       </div>
     </div>
   );

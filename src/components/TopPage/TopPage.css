@@ -32,4 +32,12 @@
     margin-right: auto;
     margin-bottom: 16px;
   }
+
+  .sally {
+    position: absolute;
+  }
+  .puddle {
+    margin-left: 65px;
+    margin-top: 80px;
+  }
 }
