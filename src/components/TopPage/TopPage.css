@@ -1,5 +1,8 @@
 /* Extra small devices */
 @media (max-width: 576px) {
+  body {
+    max-width: 576px;
+  }
   .header-paragraph {
     text-align: center;
     font-size: 16px;
