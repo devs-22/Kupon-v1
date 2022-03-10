@@ -2,59 +2,78 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button } from '../Styles/Button.styles';
 import './Header.css';
+import { MenuToggle } from './menuToggle';
 
-function Header() {
-  const [click, setClick] = useState(false);
+const Header = () => {
+  const [isOpen, setOpen] = useState(false);
+  const toggled = () => {
+    setOpen(!isOpen);
+  };
 
-  const handleClick = () => setClick(!click);
   return (
-    <>
-      <nav className="navbar">
-        <div className="nav-container">
+    <div>
+      <div className="kupon-container">
+        <div className="logo">
           <NavLink to="/" className="nav-logo">
             Kupon
           </NavLink>
-
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className="nav-item">
-              <NavLink to="/" className="nav-links" onClick={handleClick}>
-                FAQ
+        </div>
+        <div className="header-buttons">
+          <div className="header-button">
+            <Button
+              color="#000000"
+              backgroundColor="#fff"
+              hover="#fff"
+              width="91px"
+              border="1px solid"
+              className="sign-in"
+            >
+              Sign In
+            </Button>
+          </div>
+          <div>
+            <Button
+              color="#fff"
+              backgroundColor="#000000"
+              hover="#025CE4"
+              width="156px"
+              border="none"
+            >
+              Create Account
+            </Button>
+          </div>
+        </div>
+        <div className="hamburger">
+          <div className="hamburger-index">
+            <MenuToggle isOpen={isOpen} toggle={toggled} />
+          </div>
+          {isOpen && (
+            <div className="ham-style">
+              <NavLink className={'header-link'} to="/" onClick={toggled}>
+                FAQs
               </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/about" className="nav-links" onClick={handleClick}>
+              <NavLink className={'header-link'} to="/" onClick={toggled}>
                 Terms
               </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/blog" className="nav-links" onClick={handleClick}>
+              <NavLink className={'header-link'} to="/" onClick={toggled}>
                 Privacy
               </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/contact"
-                className="nav-links"
-                onClick={handleClick}
-              >
+              <NavLink className={'header-link'} to="/" onClick={toggled}>
                 Contact Us
               </NavLink>
-            </li>
-            <li>
-              <div className="login-button">
+              <div className="header-button">
                 <Button
                   color="#000000"
                   backgroundColor="#fff"
                   hover="#fff"
                   width="298px"
                   border="1px solid"
+                  className="sign-in"
                 >
-                  Log In
+                  Sign In
                 </Button>
               </div>
-            </li>
-            <li>
-              <div className="create-account">
+              <div>
                 <Button
                   color="#fff"
                   backgroundColor="#000000"
@@ -65,16 +84,12 @@ function Header() {
                   Create Account
                 </Button>
               </div>
-            </li>
-          </ul>
-          <div className="nav-icon" onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
-          </div>
-          <div className="button-header"></div>
+            </div>
+          )}
         </div>
-      </nav>
-    </>
+      </div>
+    </div>
   );
-}
+};
 
 export default Header;

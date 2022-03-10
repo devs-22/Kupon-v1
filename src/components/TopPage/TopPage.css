@@ -1,13 +1,6 @@
-/* Extra small devices */
 @media (max-width: 576px) {
-  body {
-    max-width: 576px;
-  }
-  .header-paragraph {
-    text-align: center;
-    font-size: 16px;
-    line-height: 19.84px;
-    font-weight: bold;
+  .started-flex-desktop {
+    display: none;
   }
   .container {
     display: flex;
@@ -18,6 +11,7 @@
     margin-left: 56px;
     margin-right: 56px;
     margin-bottom: 22px;
+    margin-top: 43px;
   }
 
   .header-container {
@@ -26,34 +20,62 @@
     font-size: 32px;
     line-height: 39.68px;
     text-align: center;
+    width: 206px;
+  }
+
+  .header-paragraph {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19.84px;
+    font-weight: bold;
   }
 
   .account-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 16px;
   }
 
   .sally {
     position: absolute;
+    width: 313.6px;
+    height: 306.55px;
+    margin: auto;
+    left: 0;
+    right: 0;
   }
+
   .puddle {
-    margin-left: 65px;
-    margin-top: 80px;
+    width: 211.31px;
+    height: 176.31px;
+    position: absolute;
+    z-index: -1;
+    margin: auto;
+    left: 0;
+    right: 0;
+    margin-top: 70px;
+    padding-right: 10px;
   }
 
   section {
+    margin-top: 95%;
     background: rgba(135, 190, 228, 0.1);
     margin-left: 3%;
     margin-right: 3%;
-    margin-top: 34.69px;
     padding-bottom: 83px;
   }
 
-  section h1 {
+  .poly {
+    width: 26.4px;
+    height: 14.05px;
+    padding-right: 14px;
+  }
+
+  .poly2 {
+    width: 26.4px;
+    height: 14.05px;
+    padding-left: 14px;
+  }
+
+  .section-h1 {
     text-align: center;
     font-weight: 400;
     font-size: 12px;
@@ -64,40 +86,30 @@
 
   .get-started-header {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 7%;
-    margin-right: 7%;
   }
 
   .get-started-header h2 {
-    text-align: center;
     font-size: 16px;
-    line-height: 19.84px;
-    font-weight: 700;
+    font-weight: bold;
+    line-height: 20px;
   }
 
-  .poly {
-    padding-right: 14px;
-  }
-  .poly2 {
-    padding-left: 14px;
-  }
-
-  .create-account {
+  .create-account2 {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .create-account h1 {
+  .create-account2 h1 {
     font-size: 16px;
     color: #000000;
     font-weight: bold;
-    margin-top: -9%;
   }
 
-  .create-account p {
+  .create-account2 p {
     text-align: center;
     margin-top: 1%;
     font-weight: 400%;
@@ -112,14 +124,12 @@
     font-weight: 400%;
     line-height: 17px;
     font-size: 14px;
-    color: #8a8a8e;
   }
 
   .create-invoice h1 {
     font-size: 16px;
     color: #000000;
     font-weight: bold;
-    margin-top: -9%;
   }
 
   .p-invoice {
@@ -129,8 +139,21 @@
     line-height: 17px;
     font-size: 14px;
     color: #8a8a8e;
-    margin-left: 18%;
-    margin-right: 18%;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .p-create {
+    text-align: center;
+    margin-top: 1%;
+    font-weight: 400%;
+    line-height: 17px;
+    font-size: 14px;
+    color: #8a8a8e;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .p-jiffy {
@@ -149,5 +172,140 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: -4%;
+  }
+}
+
+@media (min-width: 992px) {
+  .flex-container {
+    width: 100%;
+    display: flex;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 150px;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .header-container {
+    width: 542px;
+    font-size: 72px;
+    line-height: 80px;
+    font-weight: bold;
+  }
+
+  .header-paragraph {
+    width: 504px;
+    font-size: 16px;
+    line-height: 19.84px;
+    font-weight: bold;
+  }
+
+  .account-button {
+    margin-right: 16px;
+  }
+
+  .sally {
+    position: absolute;
+    right: 12px;
+    bottom: 34px;
+    top: 69px;
+  }
+
+  .puddle {
+    position: absolute;
+    z-index: -1;
+    margin-left: 10px;
+    margin-top: -2px;
+    width: 400px;
+  }
+
+  section {
+    background-color: #e0f1fd;
+    background-size: 0 608px;
+    margin-top: 230px;
+    padding-bottom: 90px;
+  }
+
+  .section-h1 {
+    padding-top: 84px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.8px;
+    color: #025ce4;
+  }
+
+  .get-started-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .get-started-header h2 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .poly {
+    padding-right: 13.01px;
+  }
+
+  .poly2 {
+    padding-left: 13.01px;
+  }
+
+  .started-flex-mobile {
+    display: none;
+  }
+
+  .started-flex-desktop {
+    padding-top: 40px;
+  }
+
+  .desktop-header {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .desktop-footer {
+    display: flex;
+    justify-content: space-between;
+    /* margin-left:10px; */
+    margin-right: 17px;
+  }
+
+  /* .photo-header {
+    margin-right: 5.75px;
+    margin-left: 5.75px;
+  } */
+
+  .footer-p {
+    display: flex;
+    flex-direction: column;
+    width: 276px;
+    /* margin-left: 2.5%;
+    margin-right: 2.5%; */
+  }
+
+  .footer-p h1 {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: black;
+  }
+
+  .footer-p p {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #8a8a8e;
+    font-weight: 500;
+    margin-left: 28px;
+    margin-right: 28px;
   }
 }

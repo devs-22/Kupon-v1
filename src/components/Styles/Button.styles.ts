@@ -19,6 +19,7 @@ export const Button = styled.button<{
   padding: 0.9rem;
   cursor: pointer;
   height: 56px;
+  transition: all 300ms ease-in-out;
 
   &:hover {
     background: ${(props) => props.hover};
