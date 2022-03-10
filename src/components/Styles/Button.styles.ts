@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Button = styled.button<{
   backgroundColor: string;
@@ -15,9 +15,11 @@ export const Button = styled.button<{
   color: ${(props) => props.color};
   font-size: 16px;
   font-weight: 700;
-  font-family: "cabinetgrotesk";
+  font-family: 'cabinetgrotesk';
   padding: 0.9rem;
   cursor: pointer;
+  height: 56px;
+  transition: all 300ms ease-in-out;
 
   &:hover {
     background: ${(props) => props.hover};

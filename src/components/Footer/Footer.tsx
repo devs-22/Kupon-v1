@@ -6,7 +6,7 @@ import { ReactComponent as Instagram } from '../../assets/SVGs/instagram.svg';
 const Footer = () => {
   const today = new Date();
   return (
-    <div>
+    <div className='root-container'>
       <div className="footer-container">
         <div>
           <button>FAQs</button>
@@ -17,9 +17,9 @@ const Footer = () => {
         <div>
           <button>Privacy</button>
         </div>
-      </div>
-      <div className="contact-button">
-        <button>Contact us</button>
+        <div>
+          <button>Contact us</button>
+        </div>
       </div>
       <hr />
       <p className="footer-year">@ {today.getFullYear()} Kupon Technology</p>
