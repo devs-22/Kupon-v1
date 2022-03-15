@@ -1,0 +1,35 @@
+.leaf {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header-link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 88px;
+}
+
+.C-A {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.details-container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+label {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  margin-bottom: 8px;
+}
+
+.header-space {
+  margin-top: 34px;
+}
