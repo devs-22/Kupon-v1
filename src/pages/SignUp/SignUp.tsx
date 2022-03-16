@@ -24,7 +24,7 @@ const SignUp = () => {
                 required
                 id="outlined-required"
                 label="Required"
-                style={{ width: '350px' }}
+                className="text-field"
               />
             </div>
             <div className="header-space">
@@ -33,18 +33,23 @@ const SignUp = () => {
                 required
                 id="outlined-required"
                 label="Required"
-                style={{ width: '350px' }}
+                className="text-field"
               />
             </div>
             <div className="header-space">
               <label>Business logo</label>
               <div>
-                <input
-                  type={'image'}
-                  src="../../assets/IMAGES/picc.png"
-                  alt="pi"
-                />
+                <input type={'file'} accept="image/*" />
               </div>
+            </div>
+            <div className="header-space">
+              <label>Address</label>
+              <TextField
+                required
+                id="outlined-required"
+                label="Required"
+                className="text-field"
+              />
             </div>
           </form>
           <div>

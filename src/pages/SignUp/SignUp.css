@@ -33,3 +33,7 @@ label {
 .header-space {
   margin-top: 34px;
 }
+
+.text-field {
+  width: 350px;
+}
