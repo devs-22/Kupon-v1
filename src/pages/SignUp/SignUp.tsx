@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import './SignUp.css';
 import { NavLink } from 'react-router-dom';
+import InputAdornment from '@mui/material/InputAdornment';
+import MuiPhoneNumber from 'material-ui-phone-number';
 
 const SignUp = () => {
+  const [number, setNumber] = useState('');
+  const handleNumber = () => {
+    setNumber(number);
+  };
   return (
     <div className="sign-container">
       <div>
@@ -48,6 +54,34 @@ const SignUp = () => {
                 required
                 id="outlined-required"
                 label="Required"
+                className="text-field"
+              />
+            </div>
+            <div className="header-space">
+              <label>Email</label>
+              <TextField
+                required
+                id="outlined-required"
+                label="Required"
+                className="text-field"
+                InputProps={{
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <img
+                        src={require('../../assets/IMAGES/Tick Square.png')}
+                        alt=""
+                      />
+                    </InputAdornment>
+                  ),
+                }}
+              />
+            </div>
+            <div className="header-space">
+              <label>Number</label>
+              <MuiPhoneNumber
+                defaultCountry={'ng'}
+                variant="outlined"
+                onChange={handleNumber}
                 className="text-field"
               />
             </div>
