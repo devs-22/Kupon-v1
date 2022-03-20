@@ -1,3 +1,5 @@
+import Footer from '../../components/Footer/Footer';
+import Header from '../../components/Header/Header';
 import TopPages from '../../components/TopPage/TopPages';
 import './Home.css';
 // import { Button } from "./components/Styles/Button.styles";
@@ -6,7 +8,9 @@ import './Home.css';
 function Home() {
   return (
     <div className="Home">
+      <Header />
       <TopPages />
+      <Footer />
     </div>
   );
 }
