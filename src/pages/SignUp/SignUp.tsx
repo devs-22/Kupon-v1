@@ -9,8 +9,18 @@ import IconButton from '@mui/material/IconButton';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { schema } from './schema';
-import { useForm, Controller } from 'react-hook-form';
+import { useForm, Controller, SubmitHandler } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+
+type FormValues = {
+  fullName: string;
+  businessName: string;
+  address: string;
+  email: string;
+  phoneNumber: string;
+  password: string;
+  confirmPassword: string;
+};
 
 const SignUp = () => {
   const [number, setNumber] = useState('');
@@ -41,12 +51,12 @@ const SignUp = () => {
     control,
     handleSubmit,
     formState: { errors },
-  } = useForm({
+  } = useForm<FormValues>({
     mode: 'onChange',
     resolver: yupResolver(schema),
   });
 
-  const submitForm = (data: any, e: any) => {
+  const onSubmit: SubmitHandler<FormValues> = (data: any, e: any) => {
     e.target.reset();
     console.log(data);
   };
@@ -63,7 +73,8 @@ const SignUp = () => {
         </NavLink>
         <div className="details-container">
           <p className="C-A">Create Account</p>
-          <form onSubmit={handleSubmit(submitForm)}>
+
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div>
               <label>Full Name</label>
               <Controller
@@ -75,7 +86,7 @@ const SignUp = () => {
                     {...field}
                     required
                     id="outlined-required"
-                    error={errors.fullName?.message}
+                    // error={errors.fullName}
                     label="Required"
                     className="text-field"
                     helperText={errors.fullName ? errors.fullName.message : ''}
@@ -95,8 +106,12 @@ const SignUp = () => {
                     {...field}
                     required
                     id="outlined-required"
+                    // error={errors.businessName}
                     label="Required"
                     className="text-field"
+                    helperText={
+                      errors.businessName ? errors.businessName.message : ''
+                    }
                   />
                 )}
               />
@@ -121,6 +136,8 @@ const SignUp = () => {
                     required
                     id="outlined-required"
                     label="Required"
+                    // error={errors.address}
+                    helperText={errors.address ? errors.address.message : ''}
                     className="text-field"
                   />
                 )}
@@ -140,6 +157,8 @@ const SignUp = () => {
                     id="outlined-required"
                     label="Required"
                     className="text-field"
+                    // error={errors.email}
+                    helperText={errors.email ? errors.email.message : ''}
                     autoComplete="email"
                     InputProps={{
                       endAdornment: (
@@ -246,7 +265,7 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-      <div sign-container2></div>
+      <div className="sign-container2"></div>
     </div>
   );
 };
