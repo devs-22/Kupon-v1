@@ -258,7 +258,7 @@ const SignUp = () => {
               />
             </div>
 
-            <input type={'submit'} />
+            <input type={'submit'} className="submit-button" />
           </form>
           <div>
             <p>.</p>

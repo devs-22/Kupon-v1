@@ -37,3 +37,7 @@ label {
 .text-field {
   width: 350px;
 }
+
+.submit-button {
+  color: red;
+}
