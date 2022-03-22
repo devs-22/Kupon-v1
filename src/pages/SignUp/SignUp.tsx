@@ -62,7 +62,7 @@ const SignUp = () => {
   };
   return (
     <div className="sign-container">
-      <div>
+      <div className="con-101">
         <img
           src={require('../../assets/IMAGES/Leaf.png')}
           alt=""
@@ -75,7 +75,7 @@ const SignUp = () => {
           <p className="C-A">Create Account</p>
 
           <form onSubmit={handleSubmit(onSubmit)}>
-            <div>
+            <div className="header-space">
               <label>Full Name</label>
               <Controller
                 name="fullName"
@@ -258,14 +258,20 @@ const SignUp = () => {
               />
             </div>
 
-            <input type={'submit'} className="submit-button" />
+            <input
+              type={'submit'}
+              value="Create Account"
+              className="submit-button"
+            />
           </form>
           <div>
             <p>.</p>
           </div>
         </div>
       </div>
-      <div className="sign-container2"></div>
+      <div className="con-202">
+        
+      </div>
     </div>
   );
 };
