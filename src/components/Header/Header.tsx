@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Button } from '../Styles/Button.styles';
 import './Header.css';
 import { MenuToggle } from './menuToggle';
@@ -10,6 +10,7 @@ const Header = () => {
     setOpen(!isOpen);
   };
 
+  const navigate = useNavigate();
   return (
     <div>
       <div className="kupon-container">
@@ -38,6 +39,9 @@ const Header = () => {
               hover="#025CE4"
               width="156px"
               border="none"
+              onClick={() => {
+                navigate('/SignUp');
+              }}
             >
               Create Account
             </Button>
@@ -49,16 +53,16 @@ const Header = () => {
           </div>
           {isOpen && (
             <div className="ham-style">
-              <NavLink className={'header-link'} to="/" onClick={toggled}>
+              <NavLink className={'header-linker'} to="/" onClick={toggled}>
                 FAQs
               </NavLink>
-              <NavLink className={'header-link'} to="/" onClick={toggled}>
+              <NavLink className={'header-linker'} to="/" onClick={toggled}>
                 Terms
               </NavLink>
-              <NavLink className={'header-link'} to="/" onClick={toggled}>
+              <NavLink className={'header-linker'} to="/" onClick={toggled}>
                 Privacy
               </NavLink>
-              <NavLink className={'header-link'} to="/" onClick={toggled}>
+              <NavLink className={'header-linker'} to="/" onClick={toggled}>
                 Contact Us
               </NavLink>
               <div className="header-button">
@@ -80,6 +84,9 @@ const Header = () => {
                   hover="#025CE4"
                   width="298px"
                   border="none"
+                  onClick={() => {
+                    navigate('/SignUp');
+                  }}
                 >
                   Create Account
                 </Button>
