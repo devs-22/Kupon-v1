@@ -383,11 +383,15 @@
     margin-right: 16px;
   }
 
+  .sallyAndPuddle {
+    position: relative;
+  }
+
   .sally {
     position: absolute;
-    right: 12px;
-    bottom: 34px;
-    top: 69px;
+    left: -80px;
+    top: -149px;
+
   }
 
   .puddle {

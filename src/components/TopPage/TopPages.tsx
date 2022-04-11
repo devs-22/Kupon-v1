@@ -42,7 +42,7 @@ const TopPages = () => {
             Learn More
           </Button>
         </div>
-        <div>
+        <div className='sallyAndPuddle'>
           <img
             src={require('../../assets/IMAGES/Saly-1 (1).png')}
             alt=""
