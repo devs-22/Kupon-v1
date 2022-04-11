@@ -1,9 +1,11 @@
 import { Button } from '../Styles/Button.styles';
 import { ReactComponent as Line } from '../../assets/SVGs/Line 6.svg';
+import {useNavigate } from 'react-router-dom';
 
 import './TopPage.css';
 
 const TopPages = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="flex-container">
@@ -23,6 +25,9 @@ const TopPages = () => {
             width="156px"
             border="none"
             className="account-button"
+            onClick={() => {
+              navigate('/SignUp');
+            }}
           >
             Create Account
           </Button>
@@ -37,7 +42,7 @@ const TopPages = () => {
             Learn More
           </Button>
         </div>
-        <div>
+        <div className='sallyAndPuddle'>
           <img
             src={require('../../assets/IMAGES/Saly-1 (1).png')}
             alt=""
