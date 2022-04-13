@@ -103,7 +103,6 @@ const HandImage = styled.img`
   left: 0;
 
   @media (max-width: 768px) {
-    position: absolute;
     width: 60px;
     height: 60px;
     left: -48px;
