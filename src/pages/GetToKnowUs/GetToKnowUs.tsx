@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from "styled-components"
 
 import Flower from '../../assets/IMAGES/orangeFLOWER.png';
