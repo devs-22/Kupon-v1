@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import Flower from '../../assets/IMAGES/orangeFLOWER.png';
@@ -87,6 +87,14 @@ font-size: 12px;
 line-height: 2rem;
 padding: 1.5rem 3rem 1.5rem 1rem;
 margin-right: 0.5rem;
+
+}
+@media (min-width: 769px) and ( max-width: 992px){
+  display: flex;
+flex-direction: column;
+  font-size: 20px;
+margin: 0;
+line-height: 3rem;
 }
 
 @media (min-width: 769px) and ( max-width: 992px){
@@ -97,6 +105,8 @@ margin: 0;
 line-height: 3rem;
 }
 `
+
+
 
 const Image = styled.img`
   height: 80px;
