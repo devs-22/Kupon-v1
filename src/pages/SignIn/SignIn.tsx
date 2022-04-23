@@ -44,10 +44,11 @@ const SignIn = () => {
   };
 
   const navigate = useNavigate();
+  const today = new Date();
 
   return (
-    <div>
-      <div>
+    <div className="root-element">
+      <div className="home-signin">
         <img
           src={require('../../assets/IMAGES/Leaf.png')}
           alt=""
@@ -57,6 +58,7 @@ const SignIn = () => {
           Kupon
         </NavLink>
         <p className="CP-P">Log in to your Account</p>
+        <p className="welcome-tag">Welcome back, Please enter your details.</p>
         <div className="sign-in-space">
           <label>Email</label>
           <Controller
@@ -121,14 +123,14 @@ const SignIn = () => {
         <Button
           color="#fff"
           backgroundColor="#025CE4"
-          hover="#fff"
-          width="350px"
+          hover="#025CE4"
+          width="430px"
           border="1px solid"
           className="sign-in-button"
         >
           Log in
         </Button>
-        <p className='account-p'>
+        <p className="account-p">
           Don't have an account?{' '}
           <span
             style={{ color: '#025CE4' }}
@@ -138,6 +140,9 @@ const SignIn = () => {
           >
             Create one
           </span>
+        </p>
+        <p className="sign-in-footer">
+          @ {today.getFullYear()} Kupon Technology
         </p>
       </div>
       <div className="signup-half"></div>
