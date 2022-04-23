@@ -1,0 +1,67 @@
+.leaf {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .header-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 88px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+  }
+
+  .sign-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .CP-P {
+      margin-left: 20px;
+      font-size: 24px;
+      font-weight: 700;
+      padding-top: 5px;
+  }
+
+  .text-field {
+    width: 350px;
+  }
+
+  label {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 8px;
+  }
+
+  .sign-in-space{
+    margin-left: 20px;
+    margin-top: 32px;
+  }
+
+  .f-p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    font-weight: 400;
+    color: #025CE4;
+    margin-right: 24px;
+    }
+
+    .sign-in-button{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 32px;
+    }
+
+    .account-p {
+      font-size: 12px;
+      font-weight: 400;
+      margin-top: 24px;
+      margin-left: 24px;
+    }
