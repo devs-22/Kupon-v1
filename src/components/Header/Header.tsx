@@ -28,6 +28,9 @@ const Header = () => {
               width="91px"
               border="1px solid"
               className="sign-in"
+              onClick={() => {
+                navigate('/SignIn');
+              }}
             >
               Sign In
             </Button>
@@ -73,6 +76,9 @@ const Header = () => {
                   width="298px"
                   border="1px solid"
                   className="sign-in"
+                  onClick={() => {
+                    navigate('/SignIn');
+                  }}
                 >
                   Sign In
                 </Button>

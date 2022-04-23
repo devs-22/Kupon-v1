@@ -1,6 +1,6 @@
 import { Button } from '../Styles/Button.styles';
 import { ReactComponent as Line } from '../../assets/SVGs/Line 6.svg';
-import {useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import './TopPage.css';
 
@@ -42,7 +42,7 @@ const TopPages = () => {
             Learn More
           </Button>
         </div>
-        <div className='sallyAndPuddle'>
+        <div className="sallyAndPuddle">
           <img
             src={require('../../assets/IMAGES/Saly-1 (1).png')}
             alt=""
@@ -56,8 +56,10 @@ const TopPages = () => {
         </div>
       </div>
       <section>
-        <h1 className="section-h1">GET STARTED</h1>
-        <div className="get-started-header">
+        <h1 className="section-h1" data-aos="fade-up">
+          GET STARTED
+        </h1>
+        <div className="get-started-header" data-aos="flip-up">
           <img
             src={require('../../assets/IMAGES/Polypodium.png')}
             alt=""
@@ -72,41 +74,65 @@ const TopPages = () => {
         </div>
         <div className="started-flex-desktop">
           <div className="desktop-header">
-            <div className="photo-header">
+            <div
+              className="photo-header"
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
               <img src={require('../../assets/IMAGES/Frame 1562.png')} alt="" />
             </div>
             <img src={require('../../assets/IMAGES/Line 8.png')} alt="" />
-            <div className="photo-header">
+            <div
+              className="photo-header"
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
               <img src={require('../../assets/IMAGES/Frame 1563.png')} alt="" />
             </div>
             <img src={require('../../assets/IMAGES/Line 8.png')} alt="" />
-            <div className="photo-header">
+            <div
+              className="photo-header"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <img src={require('../../assets/IMAGES/Frame 1564.png')} alt="" />
             </div>
             <img src={require('../../assets/IMAGES/Line 8.png')} alt="" />
-            <div className="photo-header">
+            <div
+              className="photo-header"
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
               <img src={require('../../assets/IMAGES/Frame 1565.png')} alt="" />
             </div>
           </div>
           <div className="desktop-footer">
-            <div className="footer-p">
+            <div className="footer-p" data-aos="flip-left" data-aos-delay="500">
               <h1>Create account</h1>
               <p>
                 Create an account on the web app <br /> then sign in
               </p>
             </div>
-            <div className="footer-p">
+            <div
+              className="footer-p"
+              data-aos="zoom-in-down"
+              data-aos-delay="5000"
+            >
               <h1>Create Invoice</h1>
               <p>Draft up an Invoice for your customer in just few minutes.</p>
             </div>
-            <div className="footer-p">
+            <div
+              className="footer-p"
+              data-aos="zoom-in-down"
+              data-aos-delay="5000"
+            >
               <h1>Send Invoice</h1>
               <p>
                 Immediately send invoice to your customer after drafting through
                 the mail.
               </p>
             </div>
-            <div className="footer-p">
+            <div className="footer-p" data-aos="flip-left" data-aos-delay="500">
               <h1>Done in a jiffy</h1>
               <p>Continue with your business, now that invoice is sent.</p>
             </div>

@@ -1,0 +1,173 @@
+@media (max-width: 576px) {
+.leaf {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .header-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 88px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+  }
+
+  .sign-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .CP-P {
+      margin-left: 20px;
+      font-size: 24px;
+      font-weight: 700;
+      padding-top: 5px;
+  }
+
+  .text-field {
+    width: 350px;
+  }
+
+  label {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 8px;
+  }
+
+  .sign-in-space{
+    margin-left: 20px;
+    margin-top: 32px;
+  }
+
+  .f-p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    font-weight: 400;
+    color: #025CE4;
+    margin-right: 24px;
+    }
+
+    .sign-in-button{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 32px;
+    }
+
+    .account-p {
+      font-size: 12px;
+      font-weight: 400;
+      margin-top: 24px;
+      margin-left: 24px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .root-element {
+      display: flex;
+      width: 100%;
+    }
+
+    .home-signin {
+      width: 50%;
+      flex: 1;
+    }
+
+  .leaf {
+    display: none;
+  }
+
+  .header-link {
+    text-decoration: none;
+    margin-left: 130px;
+    padding-top: 112px;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+  }
+
+  .sign-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .CP-P {
+      margin-left: 130px;
+      font-size: 32px;
+      font-weight: 700;
+      padding-top: 5px;
+  }
+
+  .welcome-tag {
+    color: 
+    #8A8A8E;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 130px;
+  }
+
+  .text-field {
+    width: 496px;
+  }
+
+  label {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 8px;
+  }
+
+  .sign-in-space{
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+    margin-top: 45px;
+  }
+
+  .f-p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-weight: 400;
+    color: #025CE4;
+    margin-right: 122px; ;
+    }
+
+    .sign-in-button{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 32px;
+      margin-left: 130px;
+    }
+
+    .account-p {
+      font-size: 16px;
+      font-weight: 400;
+      margin-top: 24px;
+      margin-left: 130px;
+    }
+
+    .signup-half {
+      background-color: #025ce4;
+      background-image: url('../../assets/IMAGES/Frame\ 1587.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: 50%;
+    }
+
+    .sign-in-footer {
+      margin-top: 60%;
+      font-size: 12px;
+      font-weight: 400;
+      color: #024BB9;
+      margin-left: 130px;
+    }
+  }
